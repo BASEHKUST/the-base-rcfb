@@ -1,15 +1,30 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Events from './pages/Events';
+import Bulletin from './pages/Bulletin';
+import Broadcast from './pages/Broadcast';
+import Team from './pages/Team';
+import StartupInternship from './pages/StartupInternship';
 
 // Your Components go here
-import Header from './Header';
+
 
 class Main extends Component {
     render() {
         return (
-            <React.Fragment>
-                <Header />
-                <div style={{width: '100%', height: '2000px', zIndex: '-2'}}><h1>THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br />THE BASE !<br /></h1></div>
-            </React.Fragment>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/events' element={<Events />} />
+                    <Route path='/bulletin' element={<Bulletin />} />
+                    <Route path='/broadcast' element={<Broadcast />} />
+                    <Route path='/team' element={<Team />} />
+                    <Route path='/startup-internship' element={<StartupInternship />} />
+                </Routes>
+            </BrowserRouter>
         );
     }
 }

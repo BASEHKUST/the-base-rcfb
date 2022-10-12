@@ -1,0 +1,62 @@
+.navbar-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar-logo-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.the-base-logo {
+    height: 100px;
+}
+
+.navbar-sep {
+    margin-left: 20px;
+    margin-right: 25px;
+    height: 50%;
+    width: 1px;
+    background-color: #003366;
+}
+
+.ec-logo {
+    height: 40px;
+}
+
+.navbar-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-right-dummy {
+    width: 100%;
+    height: 1px;
+}
+
+.navbar-links-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 25px;
+    bottom: 2px;
+}
+
+.navbar-link {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+}
+
+.navbar-link:hover {
+    background-color: whitesmoke;
+}

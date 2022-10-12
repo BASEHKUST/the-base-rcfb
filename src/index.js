@@ -1,3 +1,4 @@
+// DON'T TOUCH THIS FILE
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Main from './components/Main';
@@ -16,10 +17,11 @@ const firebaseConfig = {
   measurementId: "G-R9WQY7C2ER"
 };
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  /* DON'T TOUCH THIS FILE */
   <React.Fragment>
     <Main />
   </React.Fragment>
