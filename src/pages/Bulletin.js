@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import HeaderAndNavbar from '../HeaderAndNavbar';
+import HeaderAndNavbar from '../components/HeaderAndNavbar';
 
-class StartupInternship extends Component {
+class Bulletin extends Component {
     state = {  } 
     render() { 
         return (
             <React.Fragment>
                 <HeaderAndNavbar />
-                <h1>Startup Internship</h1>
+                <h1>Bulletin!!!!</h1>
             </React.Fragment>
         );
     }
 }
  
-export default StartupInternship;
+export default Bulletin;

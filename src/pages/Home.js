@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import HeaderAndNavbar from '../HeaderAndNavbar';
+import HeaderAndNavbar from '../components/HeaderAndNavbar';
 
-class Broadcast extends Component {
+class Home extends Component {
     state = {  } 
     render() { 
         return (
             <React.Fragment>
                 <HeaderAndNavbar />
-                <h1>Broadcast</h1>
+                <h1>HOME PAGE</h1>
             </React.Fragment>
         );
     }
 }
  
-export default Broadcast;
+export default Home;

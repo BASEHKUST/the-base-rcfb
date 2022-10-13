@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeaderAndNavbar from '../HeaderAndNavbar';
+import HeaderAndNavbar from '../components/HeaderAndNavbar';
 
 class Events extends Component {
     state = {  } 

@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import Events from './pages/Events';
-import Bulletin from './pages/Bulletin';
-import Broadcast from './pages/Broadcast';
-import Team from './pages/Team';
-import StartupInternship from './pages/StartupInternship';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Events from '../pages/Events';
+import Bulletin from '../pages/Bulletin';
+import Broadcast from '../pages/Broadcast';
+import Team from '../pages/Team';
+import StartupInternship from '../pages/StartupInternship';
 
 // Your Components go here
 
 
 class Main extends Component {
-    render() {
+    render() { /** LINKS */
         return (
             <BrowserRouter>
                 <Routes>

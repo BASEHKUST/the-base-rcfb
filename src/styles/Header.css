@@ -17,7 +17,6 @@
     width: 100px;
     height: 100%;
     background-color: transparent;
-    left: 100px;
 }
 
 .header-anchor {
@@ -51,27 +50,22 @@
     text-decoration: none;
 }
 
-.header-menu .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 5px;
-    width: 100%;
-    justify-content: center;
-}
-
-.header-menu .grid-container .grid-item {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.header-menu .grid-container .grid-item > a {
+.header-a {
     color: #161616;
     text-decoration: none;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
-.header-menu .grid-container .grid-item > a:hover {
+.header-a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header-background {
+        height: 30px;
+    }
+    .header-right-box {
+        width: 20px;
+    }
 }
