@@ -3,3 +3,38 @@ body {
     margin: 0;
     font-family: 'Mulish', sans-serif;
 }
+
+.blockstyle {
+    background: linear-gradient(-45deg,#398DDA,#42C2FF,#85F4FF,#B8FFF9);
+    padding: 50px;
+    background-size: 400%;
+    animation: bg-fade-change 10s infinite;
+    border-radius: 21px; 
+}
+
+@keyframes bg-fade-change {
+    0%{background-position: left;}
+    50%{background-position: right;}
+    100%{background-position: left;}
+}
+
+.block--title {
+    font-family: 'Vastago Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52.1678px;
+    line-height: 65px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.block--text {
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+
+}
