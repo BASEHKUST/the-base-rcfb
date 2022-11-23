@@ -1,3 +1,4 @@
+import "../styles/HomeBlueBar.css"
 function HomeBlueBar(props) {
     return ( 
          <section className="blockstyle">
