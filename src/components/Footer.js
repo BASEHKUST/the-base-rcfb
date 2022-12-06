@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import '../styles/Footer.css'
 import BaseLogo from '../images/BASE Logo White.png'

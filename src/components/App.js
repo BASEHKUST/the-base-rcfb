@@ -8,10 +8,7 @@ import Broadcast from '../pages/Broadcast';
 import Team from '../pages/Team';
 import StartupInternship from '../pages/StartupInternship';
 
-// Your Components go here
-
-
-class Main extends Component {
+class App extends Component {
     render() { /** LINKS */
         return (
             <BrowserRouter>
@@ -29,4 +26,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default App;

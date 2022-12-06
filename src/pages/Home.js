@@ -9,13 +9,24 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <HeaderAndNavbar />
-                <h1>HOME PAGE</h1>
-                <HomeBlueBar title = "Hello ! We are The BASE Entrepreneurship Ambassadors!" content = "We are a group of students at HKUST who aim to educate what entrepreneurship means and promote entrepreneurship culture whilst providing a dedicated coworking space"/> 
-                <div style={{ width: '100%', height: '500px' }}>PLACE HOLDER</div>
-                <Footer />
+                <div className='footer-fb'>
+                    <HomeContent />
+                    <Footer />
+                </div>
+                
             </React.Fragment>
         );
     }
+}
+
+function HomeContent() {
+    return (
+        <div>
+            <h1>HOME PAGE</h1>
+            <HomeBlueBar title = "Hello ! We are The BASE Entrepreneurship Ambassadors!" content = "We are a group of students at HKUST who aim to educate what entrepreneurship means and promote entrepreneurship culture whilst providing a dedicated coworking space"/> 
+            <div style={{ width: '100%', height: '500px' }}>PLACE HOLDER</div>
+        </div>
+    );
 }
  
 export default Home;

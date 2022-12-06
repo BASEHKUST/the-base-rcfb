@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderAndNavbar from '../components/HeaderAndNavbar';
+import Footer from '../components/Footer';
 
 class Events extends Component {
     state = {  } 
@@ -7,10 +8,19 @@ class Events extends Component {
         return (
             <React.Fragment>
                 <HeaderAndNavbar />
-                <h1>Events</h1>
+                <div className='footer-fb'>
+                    <EventsContent />
+                    <Footer />
+                </div>
             </React.Fragment>
         );
     }
+}
+
+function EventsContent() {
+    return (
+        <h1>Events</h1>
+    );
 }
  
 export default Events;

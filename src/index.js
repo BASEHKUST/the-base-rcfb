@@ -1,7 +1,7 @@
 // DON'T TOUCH THIS FILE
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Main from './components/Main';
+import App from './components/App';
 import "./index.css"
 
 // Firebase Configuration DON'T TOUCH!
@@ -23,6 +23,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   /* DON'T TOUCH THIS FILE */
   <React.Fragment>
-    <Main />
+    <App />
   </React.Fragment>
 );

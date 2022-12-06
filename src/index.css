@@ -4,5 +4,10 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
-
+.footer-fb {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
