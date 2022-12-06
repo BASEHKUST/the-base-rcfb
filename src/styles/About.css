@@ -1,0 +1,169 @@
+.about-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 86px;
+    line-height: 108px;
+    color: #000000;
+
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.about-subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 51px;
+    color: #494848;
+
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.about-dream {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 51px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #25A8E0 20.31%, #1C87B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.about-description {
+    background: #59B4E8;
+    border-radius: 110px;
+    width: 1262px; 
+    height: 487px;
+    margin: auto;
+    margin-top: 52px;
+    position: relative;
+}
+
+.about-description-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 56px;
+
+    color: #FFFFFF;
+    position: absolute;
+    left: 62px;
+    top: 72px;
+}
+
+.about-did-you-know {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53px;
+    color: #000000;
+    
+    margin: 44px auto 20px 89px;
+}
+
+.about-did-you-know-1 {
+    background: #59B4E8;
+    border-radius: 103px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 52px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 89px 36px;
+
+    color: #FCFAF6;
+}
+
+.about-did-you-know-2 {
+    background: #F1C718;
+    border-radius: 103px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 52px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 89px 36px;
+
+    color: #FCFAF6;
+}
+
+.about-did-you-know-3 {
+    background: #89B12C;
+    border-radius: 103px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 52px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 89px 36px;
+
+    color: #FCFAF6;
+}
+
+.about-meet-the-team {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 47.39px;
+    line-height: 59px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.about-profile .about-profile-img{
+    width: 205px;
+    height: 289px;
+}
+
+.about-profile {
+    position: relative;
+}
+
+.about-profile-img {
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.about-profile-description {
+    position: absolute;
+    opacity: 0.9;
+    width: 205px;
+    height: 70px;
+    bottom: 0;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+}
+
+.about-profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-profiles > .about-profile {
+    margin-left: 35px;
+    margin-right: 35px;
+}
