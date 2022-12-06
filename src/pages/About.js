@@ -5,6 +5,7 @@ import '../styles/About.css'
 import TM from '../images/AboutPage/TeamMembers';
 import Arrow from '../images/AboutPage/arrow.svg'
 import Mascot from '../images/AboutPage/mascot.svg'
+import Footer from '../components/Footer'
 
 class About extends Component {
     state = {  } 
@@ -12,7 +13,10 @@ class About extends Component {
         return (
             <React.Fragment>
                 <HeaderAndNavbar />
-                <AboutContent />
+                <div className='footer-fb'>
+                    <AboutContent />
+                    <Footer />
+                </div>
             </React.Fragment>
         );
     }
@@ -107,12 +111,11 @@ function MeetTheTeam() {
                 <Profile name='Pranav' backgroundColor={Color.green} />
                 <Profile name='Amber' backgroundColor={Color.green} />
             </div>
-            <div className='about-profiles' style={{ marginTop: '40px' }}>
+            <div className='about-profiles' style={{ marginTop: '40px', marginBottom: '100px' }}>
                 <Profile name='Wanci' backgroundColor={Color.green} />   
                 <Profile name='Rainbow' backgroundColor={Color.green} />
                 <Profile name='Sherry' backgroundColor={Color.green} />
             </div>
-            
         </React.Fragment>
     )
 }
