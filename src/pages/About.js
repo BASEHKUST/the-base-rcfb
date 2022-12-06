@@ -3,6 +3,8 @@ import HeaderAndNavbar from '../components/HeaderAndNavbar';
 import '../styles/About.css'
 
 import TM from '../images/AboutPage/TeamMembers';
+import Arrow from '../images/AboutPage/arrow.svg'
+import Mascot from '../images/AboutPage/mascot.svg'
 
 class About extends Component {
     state = {  } 
@@ -11,7 +13,6 @@ class About extends Component {
             <React.Fragment>
                 <HeaderAndNavbar />
                 <AboutContent />
-                <div style={{ backgroundColor: 'white', width: '100%', height: '500px' }}></div>
             </React.Fragment>
         );
     }
@@ -31,12 +32,15 @@ function LearnAboutOurTeam() {
     return (
         <React.Fragment>
             <h1 className='about-title'>Learn about our teams! </h1>
-            <h2 className='about-subtitle'>one team, one <span className='about-dream'>dream</span> </h2>
+            <h2 className='about-subtitle'>one team, one <span className='about-dream'>dream</span>. </h2>
             <div className='about-description'>
                 <p className='about-description-text'>
                     We are a student-<br />run community <br />aiming to promote <br />Entrepreneurship <br />Education in <br />HKUST. 
                     <i class="fa-solid fa-arrow-right" style={{ paddingLeft: '60px' }}></i>
                 </p>
+                <img className='about-arrow' src={Arrow} alt="" />
+                <img className='about-mascot-1' src={Mascot} alt="" />
+                <img className='about-mascot-2' src={Mascot} alt="" />
             </div>
         </React.Fragment>
     )
@@ -48,7 +52,7 @@ function DidYouKnowThat() {
             <div className='about-did-you-know'>Did you know that...</div>
             <div className='about-did-you-know-1'>The BASE was first founded in <span style={{color: '#F1C718'}}>2015!</span> </div>
             <div className='about-did-you-know-2'>The BASE is <span style={{color: '#59B4E8'}}>one of the first</span> student led groups that <br />focuses on entrepreneurship and innovation! </div>
-            <div className='about-did-you-know-3'>The BASE has now helped more than 50+ startups. </div>
+            <div className='about-did-you-know-3'>The BASE has now helped more than <span style={{ color: '#F1C718' }}>50+ startups. </span> </div>
         </React.Fragment>
     )
 }
@@ -126,7 +130,5 @@ function Profile(props) {
         </React.Fragment>
     )
 }
-
-
  
 export default About;

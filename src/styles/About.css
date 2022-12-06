@@ -39,7 +39,7 @@
 .about-description {
     background: #59B4E8;
     border-radius: 110px;
-    width: 1262px; 
+    width: 1000px; 
     height: 487px;
     margin: auto;
     margin-top: 52px;
@@ -58,6 +58,28 @@
     top: 72px;
 }
 
+.about-arrow {
+   position: absolute; 
+   top: -40px;
+   left: -60px;
+   z-index: 10;
+}
+
+.about-mascot-1 {
+    position: absolute;
+    bottom: 60px;
+    left: -60px;
+    z-index: 10;
+}
+
+.about-mascot-2 {
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    transform: scalex(-1) rotate(-15deg);
+    z-index: 10;
+}
+
 .about-did-you-know {
     font-style: normal;
     font-weight: 700;
@@ -65,7 +87,7 @@
     line-height: 53px;
     color: #000000;
     
-    margin: 44px auto 20px 89px;
+    margin: 44px auto 20px 155px;
 }
 
 .about-did-you-know-1 {
@@ -74,11 +96,11 @@
 
     font-style: normal;
     font-weight: 600;
-    font-size: 41px;
+    font-size: 35px;
     line-height: 52px;
     text-align: center;
     padding: 10px 0;
-    margin: 0 89px 36px;
+    margin: 0 155px 36px;
 
     color: #FCFAF6;
 }
@@ -89,11 +111,11 @@
 
     font-style: normal;
     font-weight: 600;
-    font-size: 41px;
+    font-size: 35px;
     line-height: 52px;
     text-align: center;
     padding: 10px 0;
-    margin: 0 89px 36px;
+    margin: 0 155px 36px;
 
     color: #FCFAF6;
 }
@@ -104,11 +126,11 @@
 
     font-style: normal;
     font-weight: 600;
-    font-size: 41px;
+    font-size: 35px;
     line-height: 52px;
     text-align: center;
     padding: 10px 0;
-    margin: 0 89px 36px;
+    margin: 0 155px 36px;
 
     color: #FCFAF6;
 }
@@ -116,7 +138,7 @@
 .about-meet-the-team {
     font-style: normal;
     font-weight: 700;
-    font-size: 47.39px;
+    font-size: 47px;
     line-height: 59px;
     text-align: center;
 
@@ -124,8 +146,8 @@
 }
 
 .about-profile .about-profile-img{
-    width: 205px;
-    height: 289px;
+    width: 180px;
+    height: 254px;
 }
 
 .about-profile {
@@ -140,7 +162,7 @@
 .about-profile-description {
     position: absolute;
     opacity: 0.9;
-    width: 205px;
+    width: 180px;
     height: 70px;
     bottom: 0;
 
