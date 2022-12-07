@@ -42,7 +42,7 @@ function LearnAboutOurTeam() {
             <div className='about-description'>
                 <DescriptionContentLeft />
                 <DescriptionContentRight />
-                <DescriptionIconLayer />
+                <DescriptionIcons />
             </div>
         </React.Fragment>
     )
@@ -70,7 +70,7 @@ function DescriptionContentLeft() {
     )
 }
 
-function DescriptionIconLayer() {
+function DescriptionIcons() {
     return (
         <React.Fragment>
             <img className='about-arrow' src={Arrow} alt="" />

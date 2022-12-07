@@ -12,7 +12,7 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className='container-fluid p-0 m-0' style={{width: '100%', position: 'sticky', top: '0px'}}>
+                <div className='container-fluid p-0 m-0' style={{width: '100%', position: 'sticky', top: '0px', zIndex: '10'}}>
                     {this.state.show && <HeaderMenu />}
                     <div className='header-background'>
                         <div><a href="https://ec.hkust.edu.hk" target="_blank" rel='noreferrer' className='header-ec'>Entrepreneurship Center</a></div>
