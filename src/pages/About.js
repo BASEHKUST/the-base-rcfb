@@ -7,6 +7,8 @@ import Arrow from '../images/AboutPage/arrow.svg'
 import Mascot from '../images/AboutPage/mascot.svg'
 import Footer from '../components/Footer'
 
+import DescriptionPic from '../images/AboutPage/about-pic.JPG'
+
 class About extends Component {
     state = {  } 
     render() { 
@@ -38,14 +40,42 @@ function LearnAboutOurTeam() {
             <h1 className='about-title'>Learn about our teams! </h1>
             <h2 className='about-subtitle'>one team, one <span className='about-dream'>dream</span>. </h2>
             <div className='about-description'>
-                <p className='about-description-text'>
-                    We are a student-<br />run community <br />aiming to promote <br />Entrepreneurship <br />Education in <br />HKUST. 
-                    <i class="fa-solid fa-arrow-right" style={{ paddingLeft: '60px' }}></i>
-                </p>
-                <img className='about-arrow' src={Arrow} alt="" />
-                <img className='about-mascot-1' src={Mascot} alt="" />
-                <img className='about-mascot-2' src={Mascot} alt="" />
+                <DescriptionContentLeft />
+                <DescriptionContentRight />
+                <DescriptionIconLayer />
             </div>
+        </React.Fragment>
+    )
+}
+
+function DescriptionContentRight() {
+    return (
+        <div className='about-description-right'>
+            <img src={DescriptionPic} alt="" className='about-description-pic' />
+            <p className='about-description-text-right'>
+                The BASE Entrepreneurship Ambassadors aim to educate what entrepreneurship means and promote entrepreneurship culture whilst providing a dedicated coworking space.
+            </p>
+        </div>
+    )
+}
+
+function DescriptionContentLeft() {
+    return (
+        <React.Fragment>
+            <p className='about-description-text-left'>
+                We are a student-<br />run community <br />aiming to promote <br />Entrepreneurship <br />Education in <br />HKUST. 
+                <i className="fa-solid fa-arrow-right" style={{ paddingLeft: '60px' }}></i>
+            </p>
+        </React.Fragment>
+    )
+}
+
+function DescriptionIconLayer() {
+    return (
+        <React.Fragment>
+            <img className='about-arrow' src={Arrow} alt="" />
+            <img className='about-mascot-1' src={Mascot} alt="" />
+            <img className='about-mascot-2' src={Mascot} alt="" />
         </React.Fragment>
     )
 }

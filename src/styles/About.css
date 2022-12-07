@@ -39,14 +39,58 @@
 .about-description {
     background: #59B4E8;
     border-radius: 110px;
-    width: 1000px; 
+    width: 1100px; 
     height: 487px;
     margin: auto;
     margin-top: 52px;
     position: relative;
 }
 
-.about-description-text {
+.about-description-right {
+    background-color: #398DDA;
+    border-radius: 110px;
+    width: 632px; 
+    height: 487px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.about-description-right:hover {
+    background-color: #398DDA;
+    border-radius: 110px;
+    width: 1100px; 
+    height: 487px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-description-pic {
+    height: 437px;
+    width: 582px;
+    border-radius: 80px;
+    margin: 25px;
+    z-index: 4;
+}
+
+.about-description-text-right {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+    width: 468px;
+    position: absolute;
+    right: 0;
+}
+
+.about-description-text-left {
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
@@ -54,7 +98,7 @@
 
     color: #FFFFFF;
     position: absolute;
-    left: 62px;
+    left: 50px;
     top: 72px;
 }
 
@@ -62,22 +106,22 @@
    position: absolute; 
    top: -40px;
    left: -60px;
-   z-index: 10;
+   z-index: 5;
 }
 
 .about-mascot-1 {
     position: absolute;
     bottom: 60px;
     left: -60px;
-    z-index: 10;
+    z-index: 5;
 }
 
 .about-mascot-2 {
     position: absolute;
-    top: -40px;
+    top: -70px;
     right: -20px;
     transform: scalex(-1) rotate(-15deg);
-    z-index: 10;
+    z-index: 5;
 }
 
 .about-did-you-know {
