@@ -1,27 +1,11 @@
-import React, { Component } from 'react'
-import HeaderAndNavbar from '../components/HeaderAndNavbar';
-import Footer from '../components/Footer';
+import React from 'react'
 
-class Bulletin extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <React.Fragment>
-                <HeaderAndNavbar />
-                <div className='footer-fb'>
-                    <BulletinContent />
-                    <Footer />
-                </div>
-                
-            </React.Fragment>
-        );
-    }
-}
-
-function BulletinContent() {
+function Bulletin() {
     return (
-        <h1>Bulletin!!!!</h1>
+        <React.Fragment>
+            <h1>Bulletin!!!!</h1>
+        </React.Fragment>
     );
 }
- 
+
 export default Bulletin;

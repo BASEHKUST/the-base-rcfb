@@ -1,24 +1,7 @@
-import React, { Component } from 'react'
-import HeaderAndNavbar from '../components/HeaderAndNavbar';
-import HomeBlueBar from '../components/HomeBlueBar'
-import Footer from '../components/Footer'
+import React from 'react'
+import "../styles/HomeBlueBar.css"
 
-class Home extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <React.Fragment>
-                <HeaderAndNavbar />
-                <div className='footer-fb'>
-                    <HomeContent />
-                    <Footer />
-                </div>
-            </React.Fragment>
-        );
-    }
-}
-
-function HomeContent() {
+function Home() {
     return (
         <div>
             <h1>HOME PAGE</h1>
@@ -26,6 +9,17 @@ function HomeContent() {
             <div style={{ width: '100%', height: '500px' }}>PLACE HOLDER</div>
         </div>
     );
+}
+
+function HomeBlueBar(props) {
+    return ( 
+         <section className="blockstyle">
+            <div>
+                <h1 className ="block--title">{props.title}</h1>
+                <p className="block--text">{props.content}</p>
+            </div>
+         </section>
+     );
 }
  
 export default Home;

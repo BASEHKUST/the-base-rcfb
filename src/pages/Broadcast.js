@@ -1,25 +1,10 @@
-import React, { Component } from 'react'
-import HeaderAndNavbar from '../components/HeaderAndNavbar';
-import Footer from '../components/Footer';
+import React from 'react'
 
-class Broadcast extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <React.Fragment>
-                <HeaderAndNavbar />
-                <div className='footer-fb'>
-                    <BroadcastContent />
-                    <Footer />
-                </div>
-            </React.Fragment>
-        );
-    }
-}
-
-function BroadcastContent() {
+function Broadcast() {
     return (
-        <h1>Broadcast</h1>
+        <React.Fragment>
+            <h1>Broadcast</h1>
+        </React.Fragment>
     );
 }
  

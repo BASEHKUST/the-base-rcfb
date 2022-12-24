@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PageWrapper from './PageWrapper';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Events from '../pages/Events';
@@ -8,10 +9,10 @@ import Broadcast from '../pages/Broadcast';
 import Team from '../pages/Team';
 import StartupInternship from '../pages/StartupInternship';
 
-class App extends Component {
-    render() { /** LINKS */
-        return (
-            <BrowserRouter>
+function App() {
+    return (
+        <BrowserRouter>
+            <PageWrapper>
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />
@@ -21,9 +22,9 @@ class App extends Component {
                     <Route path='/team' element={<Team />} />
                     <Route path='/startup-internship' element={<StartupInternship />} />
                 </Routes>
-            </BrowserRouter>
-        );
-    }
+            </PageWrapper>
+        </BrowserRouter>
+    );
 }
 
 export default App;

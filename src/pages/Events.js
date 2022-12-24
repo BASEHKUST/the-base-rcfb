@@ -1,26 +1,11 @@
-import React, { Component } from 'react'
-import HeaderAndNavbar from '../components/HeaderAndNavbar';
-import Footer from '../components/Footer';
+import React from 'react'
 
-class Events extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <React.Fragment>
-                <HeaderAndNavbar />
-                <div className='footer-fb'>
-                    <EventsContent />
-                    <Footer />
-                </div>
-            </React.Fragment>
-        );
-    }
-}
-
-function EventsContent() {
+function Events() {
     return (
-        <h1>Events</h1>
+        <React.Fragment>
+            <h1>Events</h1>
+        </React.Fragment>
     );
 }
- 
+
 export default Events;

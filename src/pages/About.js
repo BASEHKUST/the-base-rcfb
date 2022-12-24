@@ -1,37 +1,20 @@
-import React, { Component } from 'react'
-import HeaderAndNavbar from '../components/HeaderAndNavbar';
+import React from 'react'
 import '../styles/About.css'
 
 import TM from '../images/AboutPage/TeamMembers';
 import Arrow from '../images/AboutPage/arrow.svg'
 import Mascot from '../images/AboutPage/mascot.svg'
-import Footer from '../components/Footer'
 
 import DescriptionPic from '../images/AboutPage/about-pic.JPG'
 
-class About extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <React.Fragment>
-                <HeaderAndNavbar />
-                <div className='footer-fb'>
-                    <AboutContent />
-                    <Footer />
-                </div>
-            </React.Fragment>
-        );
-    }
-}
-
-function AboutContent() {
+function About() {
     return (
-        <div>
+        <React.Fragment>
             <LearnAboutOurTeam />
             <DidYouKnowThat />
             <MeetTheTeam />
-        </div>
-    )
+        </React.Fragment>
+    );
 }
 
 function LearnAboutOurTeam() {
